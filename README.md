@@ -10,10 +10,19 @@ Write a C program to read 3 characters one by one and print the characters in a 
 4.	End the program.
 
 ## PROGRAM:
-
+```
+#include<stdio.h>
+int main(){
+    float a,b;
+    scanf("%f%f",&a,&b);
+    float dis=a*b;
+    printf("distance:%.2f km",dis);
+}
+```
 ## OUTPUT:
 
 
+![Screenshot 2025-04-29 095656](https://github.com/user-attachments/assets/6b1ca883-8a76-4a91-87ee-cf0a85192602)
 
 
 
@@ -46,9 +55,31 @@ Write a C program to read A values and check whether A is positive number or not
 6.End the program.
 
 # PROGRAM:
+```
+#include <stdio.h>
 
+int main() {
+    int A;
+
+    // Prompt user to enter a value
+    printf("Enter a number (A): ");
+    scanf("%d", &A);
+
+    // Check if A is positive
+    if (A > 0) {
+        printf("A is a positive number.\n");
+    } else if (A < 0) {
+        printf("A is a negative number.\n");
+    } else {
+        printf("A is zero.\n");
+    }
+
+    return 0;
+}
+```
 # OUTPUT:
 
+![Screenshot 2025-04-29 100400](https://github.com/user-attachments/assets/1252ad4c-6656-4c73-a279-d2ecbbd1e413)
 
 
 
@@ -80,8 +111,21 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
-
+```
+#include <stdio.h>
+int main(){
+    int a,b,c,d,e,f;
+    scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+    float total=a+b+c+d+e+f;
+    float avg=total/6;
+    printf("Total marks = %.2f\n",total);
+    printf("Average marks = %.2f\n",avg);
+    printf("Percentage = %.2f",avg);
+    
+}
+```
 ## OUTPUT:
+![Screenshot 2025-04-29 100508](https://github.com/user-attachments/assets/c97443ae-3012-4aef-9c93-b2b936725da8)
 
 
 
@@ -111,10 +155,29 @@ Write a C program to check whether the input value is equal to 1 using simple if
 6.	End the program.
 
 ## PROGRAM:
-
+```
+#include <stdio.h>
+int main()  
+{
+    int a;
+    scanf("%d",&a);
+    if (a>=70)
+    printf("A+ GRADE");
+    else if ((a>=60)&& (a<70))
+    printf("A GRADE");
+    else if ((a>=50)&& (a<60))
+    printf("B GRADE");
+    else if ((a>=40)&& (a<50))
+    printf("C GRADE");
+    else
+    printf("F GRADE");
+    return 0;
+}
+```
 ## OUTPUT:
 
 
+![Screenshot 2025-04-29 100602](https://github.com/user-attachments/assets/330cef61-87a6-4e60-a533-c9dce0b3d9b8)
 
 
 
@@ -147,8 +210,20 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
-
+```
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if ((a%2!=0)&&(a>=25))
+          printf("The number is odd\nThe number is greater than or equal to 25");
+    else
+       printf("The number is NOT an odd number");
+}
+```
 ## OUTPUT:
+![Screenshot 2025-04-29 100657](https://github.com/user-attachments/assets/ce91c5de-cacd-40e8-8c5d-96f0cc2ea4f1)
+
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
